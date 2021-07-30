@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+
+#wrap { 
+    width: 1140px;
+	margin: 0px auto;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+li, a {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #212529;
+    text-decoration: none;
+}
+
+.fnav-container{
+    position: relative;
+    display: flex;
+    justify-content:flex-start;
+    padding-top: 15px;
+}
+
+.fnav-item1 {
+    position: relative;
+    display: flex;
+    align-content: center;
+    margin-left: auto;
+}
+
+.fnav-item1 a{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.fnav-item1 i{
+    margin-left: 10px;
+}
+
+.fnav-item2 {
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 21rem;
+}
+
+.fnav-item3 {
+    position: relative;
+    margin:0px 5px 0px 10px;
+    /* margin-right: 20px; */
+}
+
+.fnav-item4 {
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right:auto;
+}
+
+.logo{
+    cursor: pointer;
+    height: 42px;
+    width: auto;
+    margin-right: auto;
+}
+
+.nav_links{
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 10px;
+} 
+
+.nav_links li a{
+    padding: 0px 8px;
+}
+
+.nav-divider{
+    display: inline-block;
+    border-left: 0.1px outset;
+    color: #adb5bd;
+    filter: blur(0.5px);
+    height: 40px;
+}
+
+.nav-divider-2{
+    display: inline-block;
+    border-left: 0.1px outset;
+    color: #adb5bd;
+    filter: blur(0.5px);
+    height: 40px ;
+}
+
+/* body back ground colour #adb5bd */
