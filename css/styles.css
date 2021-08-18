@@ -9,15 +9,32 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: white;
+    font-family: 'Manrope', sans-serif;
 }
 
-li, a {
+h1, li, a {
     font-family: 'Manrope', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
     color: #212529;
     text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: -0.01em;
+    line-height: 1.28;
+}
+
+body{
+    background-image: url(/images/top-section-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+.no-italic{
+    font-style: normal;
 }
 
 /*-------------- Nav-bar animation --------------------*/
@@ -53,18 +70,23 @@ li, a {
 
 /*-------------- Nav-bar animation end --------------------*/
 
+/*-------------- Nav-bar CSS --------------------*/
+
 .fnav-container{
-    position: relative;
+    position: fixed;
     display: flex;
+    font-size: 14px;
+    font-weight: 600;
     justify-content:flex-start;
     padding-top: 15px;
+    z-index: 5;
 }
 
 .fnav-item1 {
     position: relative;
     display: flex;
     align-content: center;
-    margin-left: auto;
+    margin-left: 8px;
 }
 
 .fnav-item1 a{
@@ -80,7 +102,7 @@ li, a {
     position: relative;
     display: flex;
     margin-top: 10px;
-    margin-left: 22rem;
+    margin-left: 23rem;
 }
 
 .fnav-item2 li{
@@ -116,7 +138,7 @@ li, a {
 .nav_links li{
     display: inline-block;
     padding-bottom:8px;
-    margin: 0px 18px;
+    margin: 0px 15px;
 } 
 
 .nav_links li a{
@@ -139,4 +161,357 @@ li, a {
     height: 40px ;
 }
 
+/*-------------- Nav-bar CSS End --------------------*/
+
+/*-------------- Top-Section CSS --------------------*/
+.top-section-container {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 250px;
+}
+
+.top-round-widget img{
+    position: absolute;
+    height: 60px;
+    width: auto;
+    border: 3px solid white;
+    box-shadow: 0 0 5px #adb5bd;
+    border-radius: 50%;
+}
+
+.categories-widget {
+    position: relative;
+    display: flex;
+    justify-content:flex-start;
+}
+
+.tooltip {
+    visibility: hidden;
+    font-size: 14px;
+    font-weight: 700;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    top: 170%;
+    margin-left: -40px;
+}
+
+.top-round-widget a:nth-child(1){
+    margin-left: 8px;
+}
+
+.top-round-widget a:nth-child(2){
+    margin-left: 35px;
+    transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.top-round-widget a:nth-child(3){
+    margin-left: 35px;
+    transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.top-all-categories {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 7px;
+    font-size: 18px !important;
+    margin-top: 14px;
+    margin-left: 100px;
+}
+
+.top-main-text {
+    position: relative;
+    font-size: 29px;
+    margin: 60px 0px 0px 8px;
+}
+
+.slide-wrap {
+    display: inline-block;
+    position: absolute;
+    text-align: left;
+    overflow: hidden;
+    height: 65%;
+    margin-left: 10px;
+    margin-bottom: 60px;
+}
+
+.slide-move {
+    display: block;
+    position:relative;
+    left: 0;
+    white-space: nowrap;
+    overflow: visible;
+    opacity: 1;
+}
+
+.slides {
+    display: block;
+    height: 50%;
+    margin-left: 10px;
+    margin-bottom: 60px;
+}
+
+.top-sub-text {
+    position: relative;
+    font-size: 20px;
+    line-height: 32px;
+    color: #adb5bd;
+    margin: 40px 0px 0px 8px;
+}
+
+.top-left-button {
+    margin: 40px 0px 0px 10px;
+}
+
+.top-left-button span {
+    background-color: #7d8dff;
+    color: white;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin-left: 0px;
+    transition: margin-left 0.15s ease-in-out;    
+}
+
+.top-left-button svg{
+    background-color: #7d8dff;
+    color: white;
+    height: 18px;
+    width: auto;
+    margin-right: 5px;
+}
+
+.btn {
+    background-color: #7d8dff;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 13px 30px;
+    border-bottom: re;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05), 0 1.5rem 2.2rem rgba(0, 0, 0, 0.1);
+}
+
+.top-section-right {
+    position:relative;
+    margin-left: 230px;
+}
+
+.top-image-top img{
+    position: absolute;
+    width: 357px;
+    height: auto;
+    top: -15px;
+    right: 210px;
+    border-radius: 5px;
+    z-index: 3;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05), 0 1.5rem 2.2rem rgba(0, 0, 0, 0.1);
+    transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.top-image-bottom img{
+    position: relative;
+    width: 357px;
+    height: auto;
+    top: 92px;
+    margin-right: 18px;
+    border-radius: 5px;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05), 0 1.5rem 2.2rem rgba(0, 0, 0, 0.1);
+    transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+/*-------------- Top-Section CSS End --------------------*/
+
+/*-------------- Top-Section Animation Start --------------------*/
+.top-image-top img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.1), 0 2rem 3rem rgba(0, 0, 0, 0.15) ;
+} 
+
+.top-image-bottom img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.1), 0 2rem 3rem rgba(0, 0, 0, 0.15) ;
+}
+
+.top-round-widget:hover a:nth-child(2){
+    margin-left: 65px;
+}
+
+.top-round-widget:hover a:nth-child(3){
+    margin-left: 65px;
+}
+
+.top-round-widget a:nth-child(1):hover .tooltip{
+    visibility: visible;
+}
+
+.top-round-widget a:nth-child(2):hover .tooltip{
+    visibility: visible;
+}
+
+.top-round-widget a:nth-child(3):hover .tooltip{
+    visibility: visible;
+}
+
+.top-all-categories span::after{
+    content:'';
+    position:absolute;
+    display:block;
+    height:0.15em;
+    width: 150%;
+    background-color: #212529;
+    left: -400px;
+    margin-left: 620px;
+    margin-top: 4px;
+    transition: left 0.5s ease 0s, margin-left 0.5s ease 0s;
+}
+
+.top-all-categories a:hover span::after{
+    left: 0;
+    margin-left: 0;
+    transition: left 0.3s ease;
+}
+
+.top-all-categories a i{
+    position: relative;
+    padding-left:5px;
+    transition: padding 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.top-all-categories a:hover > i{
+    padding-left:14px;
+}
+
+.top-left-button a:hover span{
+    margin-left: 7px;
+    box-shadow: 0 2.5rem 3.4rem rgba(0, 0, 0, 0.1) inset;
+}
+
+.top-left-button .btn:hover{
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05), 0 2.5rem 3.4rem rgba(0, 0, 0, 0.1), 0 2.5rem 3.4rem rgba(0, 0, 0, 0.1) inset;
+}
+
+@keyframes slide{
+    0%{
+        opacity: 0;
+        transform: translateY(5%);
+    }
+    10%{
+        opacity: 1;
+        transform: translateY(-5%);
+    }
+    15%{
+        
+        transform: translateY(0);
+    }
+
+    20%{
+        
+        transform: translateY(0);
+    }
+
+    30%{
+        
+        transform: translateY(0);
+    }
+
+    40%{
+        
+        transform: translateY(-43%);
+    }
+
+    45%{
+        
+        transform: translateY(-38%);
+    }
+
+    50%{
+        
+        transform: translateY(-38%);
+    }
+
+    60%{
+        
+        transform: translateY(-38%);
+    }
+
+    70%{
+        
+        transform: translateY(-83%);
+    }
+
+    75%{
+        
+        transform: translateY(-78%);
+    }
+
+    80%{
+        
+        transform: translateY(-78%);
+    }
+
+    90%{
+        opacity: 1;
+        transform: translateY(-78%);
+    }
+    
+    100%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.slide-move:nth-child(1){
+    top: 0;
+    animation: slide 4s infinite ease;
+}
+
+/* @keyframes slide-inverse-out{
+    0%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    60%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+}
+
+@keyframes slide-inverse-in{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    60%{
+        opacity: 1;
+        transform: translateY(-10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.is-visible{
+    top: 0;
+    opacity: 1;
+    animation: slide-inverse-in 0.4s;
+}
+
+.is-hidden{
+    animation: slide-inverse-out 0.4s;
+} */
+
+/*-------------- Top-Section Animation End --------------------*/
 /* body back ground colour #adb5bd */
