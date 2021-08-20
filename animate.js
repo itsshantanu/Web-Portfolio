@@ -1,4 +1,4 @@
-// $(document).ready(function(){
+$(document).ready(function(){
 //      //setInterval(function (){
 //     //     $(".slide-wrap span").each(function(i, obj) {
 //     //         // console.log(obj);
@@ -20,11 +20,17 @@
 //     //     });
 //     //   //}, 300);   
 
-//     $(".slide-wrap span").each(function(i, obj) {
-//         setTimeout(function(){
-//             $(obj).toggleClass('text-slider');
-//         },5000);
-        
-//     });
-// });
+$(window).scroll(function() {
+
+    var height = $('.fnav-container').height();
+    var scrollTop = $(window).scrollTop();
+
+    if (scrollTop >= height - 2) {
+        $('.fnav-container').addClass('solid-nav');
+    } else {
+        $('.fnav-container').removeClass('solid-nav');
+    }
+
+});
+});
 
