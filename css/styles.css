@@ -541,6 +541,9 @@ body{
     justify-content: center;
     font-size: 32px;
     top: -10px;
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: all .5s ease;
 }
 
 .top-second-sub-text {
@@ -551,6 +554,9 @@ body{
     color: #adb5bd;
     text-align: center;
     margin: 5px 240px;
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: all .5s .25s ease;
 }
 
 .top-second-cards {
@@ -564,6 +570,9 @@ body{
     font-size: 30px;
     font-weight: 600;
     margin-top: 20px;
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: all .5s .25s ease;
 }
 
 .card-sub-text-size{
@@ -571,6 +580,9 @@ body{
     line-height: 26px;
     color: #adb5bd;
     margin-top: 15px;
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: all .5s .30s ease;
 }
 
 .first-card {
@@ -581,12 +593,24 @@ body{
     margin-right: 5px;
 }
 
+.first-card-logo {
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: all .5s ease;
+}
+
 .second-card {
     position: relative;
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-right: 5px;
+}
+
+.second-card-logo {
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: all .5s ease;
 }
 
 .third-card {
@@ -597,15 +621,27 @@ body{
     margin-right: 5px;
 }
 
+.third-card-logo {
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: all .5s ease;
+}
+
 .top-second-bottom-text {
     position: relative;
     text-align: center;
     margin: 80px 0 20px 0;
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: all .5s ease;
 }
 
 .top-second-button {
     position: relative;
     text-align: center;
+    opacity: 0;
+    transform: translateX(-3rem);
+    transition: all .4s .25s ease;
 }
 
 .top-second-button span{
@@ -637,6 +673,11 @@ body{
 
 .top-second-button .btn-2:hover{
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05), 0 2.5rem 3.4rem rgba(0, 0, 0, 0.1), 0 0 4rem rgba(0, 0, 0, 0.1) inset;
+}
+
+.is-visible {
+    opacity:1;
+    transform: translateY(0rem);
 }
 
 /*-------------- Top-Section-Second Animation End --------------------*/
